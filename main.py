@@ -60,3 +60,9 @@ else:
  print(int(number2))
 
  # Решение 5
+
+number3 = int(input('Введите любое число: '))
+if (number3 % 5 == 0 and number3 % 10 == 0 or number3 % 15 == 0) and number3 % 30 != 0:
+     print('Верное число')
+else:
+    print('Неверное число')
