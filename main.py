@@ -1,16 +1,33 @@
-# This is a sample Python script.
+# 1. Напишите программу, которая на вход принимает два числа и проверяет, является ли одно число квадратом другого.
+# Пример:
+# 5, 25 - да
+# 4, 16 - да
+# 25, 5 - да
+# 8, 9 - нет
+# 2. Напишите программу, которая на вход принимает 5 чисел и находит максимальное из них.
+# Пример:
+# 1, 4, 8, 7, 5 - 8
+# 78, 55, 36, 90, 2 - 90
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Решение 1
+print('Условие: проверим квадраты чисел')
+number_a = int(input('Введите первое число: '))
+number_b = int(input('Введите второе число: '))
+if number_a ** 2 == number_b or number_b**2 == number_a:
+    print('Все верно')
+else:
+    print('Не правильно')
 
+# Решение 2
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+number1 = int(input('Введите первое число: '))
+number2 = int(input('Введите второе число: '))
+number3 = int(input('Введите третье число: '))
+number4 = int(input('Введите четвертое число: '))
+number5 = int(input('Введите пяте число: '))
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+list1 = [number1, number2, number3, number4, number5]
+# list2 = [1, 4, 8, 7, 5]
+# max_number = max(list2)
+max_number = max(list1)
+print('Максималоное число равно ', max_number)
